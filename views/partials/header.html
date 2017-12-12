@@ -19,15 +19,14 @@
 </head>
 <body>
 <header id="header">
-  <div class="container pt-10 pb-5 text-center h-80">
-    <a href="/">
-      <img class="w-200" src="{{ cosmic.object.header.metafield.logo.imgix_url }}?w=400">
-    </a>
-  </div>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <img class="w-250" src="{{ cosmic.object.header.metafield.logo.imgix_url }}?w=500">
+        </a>
+        &nbsp;&nbsp;&nbsp;<a style="position: relative; top: 10px" class="btn btn-primary" href="tel:{{ cosmic.object.header.metadata.phone_number }}">{{ cosmic.object.header.metadata.call_cta }}</a>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>

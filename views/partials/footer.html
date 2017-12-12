@@ -4,13 +4,19 @@
     <div class="row">
       <div class="col-sm-8">
         <div class="font-20 mb-10">Contact Us</div>
-        <b>Phone:</b><br />
-        {{ cosmic.object.contact-info.metafield.phone.value }}<br />
-        <b>Email:</b><br />
-        <a href="mailto:{{ cosmic.object.contact-info.metafield.email.value }}">{{ cosmic.object.contact-info.metafield.email.value }}</a>
-        <br />
-        <b>Address:</b><br />
-        {{{ cosmic.object.contact-info.metafield.address.value }}}
+        {{# cosmic.object.contact-info.metafield.phone.value }}
+          <b>Phone:</b><br />
+          {{ cosmic.object.contact-info.metafield.phone.value }}<br />
+        {{/ cosmic.object.contact-info.metafield.phone.value }}
+        {{# cosmic.object.contact-info.metafield.email.value }}
+          <b>Email:</b><br />
+          <a href="mailto:{{ cosmic.object.contact-info.metafield.email.value }}">{{ cosmic.object.contact-info.metafield.email.value }}</a>
+          <br />
+        {{/ cosmic.object.contact-info.metafield.email.value }}
+        {{# cosmic.object.contact-info.metafield.address.value }}
+          <b>Address:</b><br />
+          {{{ cosmic.object.contact-info.metafield.address.value }}}
+        {{/ cosmic.object.contact-info.metafield.address.value }}
       </div>
       <div class="col-sm-4">
         <div class="font-20 mb-20">Connect</div>

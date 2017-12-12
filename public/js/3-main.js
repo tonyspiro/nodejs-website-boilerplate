@@ -18,6 +18,10 @@ $(function() {
       $('.form-group--email').addClass('has-error');
       return false;
     }
+    if (!data.phone) {
+      $('.form-group--phone').addClass('has-error');
+      return false;
+    }
     if (!data.message) {
       $('.form-group--message').addClass('has-error');
       return false;

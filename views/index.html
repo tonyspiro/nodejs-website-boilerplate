@@ -38,13 +38,15 @@
     <section id="blurbs" class="pt-40">
       <div>
         {{# page.metafield.blurbs.children }}
-          <div class="col-sm-4 text-center">
-            <div class="mb-20 font-26">{{ value }}</div>
-            <div class="mb-20">
-              <div class="w-300 h-300 img-circle center-block" style="background-image: url({{ children.0.imgix_url }}?w=600); background-size: cover; background-position: center;"></div>
+          <a href="{{ children.2.value }}">
+            <div class="col-sm-4 text-center">
+              <div class="mb-20 font-26">{{ value }}</div>
+              <div class="mb-20">
+                <div class="w-300 h-300 img-circle center-block" style="background-image: url({{ children.0.imgix_url }}?w=600); background-size: cover; background-position: center;"></div>
+              </div>
+              <div class="mb-20 font-16 p-15" style="color: #333">{{ children.1.value }}</div>
             </div>
-            <div class="mb-20 font-16 p-15">{{ children.1.value }}</div>
-          </div>
+          </a>
         {{/ page.metafield.blurbs.children }}
         <div class="clearfix"></div>
       </div>
