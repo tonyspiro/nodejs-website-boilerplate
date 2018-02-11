@@ -6754,6 +6754,21 @@ a {
 .navbar .container-fluid {
   max-width: 1300px;
 }
+@media (max-width: 1200px) {
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse,
+  .navbar-toggle {
+    display: block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+}
 .footer {
   border-top: 1px solid #e7e7e7;
   background-color: #f8f8f8;
@@ -6762,4 +6777,9 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .home-hero-text-area {
+    padding: 100px;
+  }
 }
