@@ -26,6 +26,12 @@
               <label>Message</label>
               <textarea name="message" style="height: 150px" class="form-control input-lg" placeholder="Enter a message"></textarea>
             </div>
+            <div class="form-group form-group--reason">
+              <select class="form-control" name="reason">
+                <option value="Need Care">I would like to book caregiving services</option>
+                <option value="Become Caregiver">I am interested in becoming a caregiver</option>
+              </select>
+            </div>
             <div class="alert alert-success success-message hidden">
               {{ page.metafield.contact_form_success_message.value }}
             </div>

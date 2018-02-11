@@ -40,6 +40,7 @@ module.exports = (app, config, partials) => {
         var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain })
         var message = 'Name: ' + data.full_name + '\n\n' +
         'Subject: ' + res.locals.contact_form.subject + '\n\n' +
+        'Reason: ' + data.reason + '\n\n'
         'Message: ' + data.message + '\n\n'
         var mailgun_data = {
           from: 'Your Website <me@' + domain + '>',
@@ -71,6 +72,12 @@ module.exports = (app, config, partials) => {
               key: 'phone',
               type: 'text',
               value: data.phone
+            },
+            {
+              title: 'Reason',
+              key: 'reason',
+              type: 'text',
+              value: data.reason
             }
           ]
         }
